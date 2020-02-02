@@ -7,10 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
+  "engines": {
+    "node": "12"
+  },
   "author": "michaellau",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "firebase-admin": "^8.9.2",
+    "firebase-functions": "^3.3.0",
+    "mongoose": "^5.8.11",
     "nodemon": "^1.18.9"
   }
 }
