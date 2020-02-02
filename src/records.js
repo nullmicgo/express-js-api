@@ -6,7 +6,7 @@ function generateRandomId(){
 
 function save(data){
   return new Promise((resolve, reject) => {
-    fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {
+    fs.writeFile(__dirname + '/data.json', JSON.stringify(data, null, 2), (err) => {
       if (err) {
         reject(err);
       } else {
@@ -22,7 +22,7 @@ function save(data){
  */
 function getQuotes(){
   return new Promise((resolve, reject) => {
-    fs.readFile('data.json', 'utf8', (err, data) => {
+    fs.readFile(__dirname + '/data.json', 'utf8', (err, data) => {
       if (err) {
         reject(err);
       } else {
