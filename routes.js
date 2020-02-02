@@ -70,6 +70,4 @@ router.delete("/quotes/:id", asyncHandler(async(req,res, next) => {
     res.status(204).end();
 }));
 
-
-
 module.exports = router; 
